@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#picture">Picture</a></li>
+                <li><a href="#song">Song</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="main">
+                <h1 class="heading">WELCOME<br>
+                    
+                TO <br> MYWEB <br>
+               PALLAVI RANJAN</h1>
+                <br>
+                <button class="btn">
+                   CLICK TO START
+                </button>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="heading">ABOUT ME</h1>
+            <div id="pic">
+                <img src="image.jpeg"alt="">
+                <div id="intro">
+                    <h2>PALLAVI RANJAN</h2>
+                    <p>I like to think that I'm a very flexible and resourceful person. Even when things change at the last 
+                        minute,I'm able to adjust accordingly and meet tight deadlines.I would say that I'm creative , hardworking
+                        and detail-oriented.I'm passionate about my work and I know how to get the task done.I would describe
+                        myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do.
+                        I believe there is value in collaboration.I am confident in my ability to produce results.Of course,
+                        situations happen when the results aren't ideal,and when that does happen,I do my best to tip the hat
+                        in a positive direction.I don't let tough situations control me.Instead,I evaluate them and decide the best
+                        result at that moment.The only way to keep moving forward is to focus on results. I am committed to adding value and reaching
+                        goals with the best results possible.
+                      </p>
+                </div>
+            </div>
+        </section>
+       <section id="picture">
+           <h1 class="heading">GALLERY</h1>
+           <br>
+           <img src="myweb1.jpeg"alt=""style="width:400px;">
+           <br>
+           <img src="webpage3.jfif"alt=""style="width:400px;">
+           <br>
+           <img src="myweb7.jpeg"alt=""style="width:400px;">
+           <br>
+           <img src="myweb10.jpg"alt=""style="width:400px;">
+           <br>
+           <img src="myweb8.jpeg"alt=""style="width:400px;">
+           <br>
+           <img src="myweb9.jpeg"alt=""style="width:400px;">
+           <br>
+           
+
+       </section>
+       <section id="song">
+       
+           <h1 class="heading">SONG</h1>
+           <div class="right-col">
+               <h2>TU AAKE DEKH LE</h2>
+               <br>
+               <br>
+               <br>
+               
+             <br>  <img src="page22.jpg" id="icon">
+           </div>
+       </div>
+       <audio id="mySong">
+           <source src="song.mp3" type="audio/mp3">
+       </audio>
+       <script>
+           
+           var mySong = document.getElementById("mySong");
+           var icon = document.getElementById("icon");
+           icon.onclick = function(){
+              if(mySong.paused){
+                  mySong.play();
+                  icon.src = "page2.png";
+              }else{
+                  mySong.pause();
+                  icon.src = "page22.jpg";
+              }
+           }
+
+       </script>
+       </section>
+       <section id="contact">
+        <h1 class="heading">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email"class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+
+    </section>
+       
+           
+
+    </body>
+</html>
